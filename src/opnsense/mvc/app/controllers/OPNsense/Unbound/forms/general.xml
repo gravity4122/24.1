@@ -1,7 +1,7 @@
 <form>
     <field>
         <id>unbound.general.enabled</id>
-        <label>Enable Unbound</label>
+        <label>Enable Application Security</label>
         <type>checkbox</type>
     </field>
     <field>
