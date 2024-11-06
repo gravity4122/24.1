@@ -34,7 +34,8 @@ require_once("interfaces.inc");
 require_once("util.inc");
 require_once("plugins.inc.d/openssh.inc");
 
-$version = shell_safe('opnsense-version');
+// $version = shell_safe('opnsense-version');
+$version = "DevGate Firewall 2.0";
 
 echo "\n*** {$config['system']['hostname']}.{$config['system']['domain']}: {$version} ***\n";
 
