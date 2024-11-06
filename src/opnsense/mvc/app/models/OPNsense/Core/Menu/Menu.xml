@@ -1,5 +1,5 @@
 <menu>
-    <Lobby order="10" cssClass="fa fa-laptop">
+    <Lobby VisibleName="Home" order="10" cssClass="fa fa-laptop">
         <Dashboard order="0" url="/index.php" cssClass="fa fa-dashboard fa-fw">
             <Args url="/index.php*" visibility="hidden"/>
             <Root url="/" visibility="hidden"/>
@@ -14,7 +14,7 @@
     <Reporting order="15" cssClass="fa fa-area-chart">
         <Settings order="10" url="/reporting_settings.php" cssClass="fa fa-cog fa-fw"/>
         <Traffic order="20" url="/ui/diagnostics/traffic" cssClass="fa fa-line-chart fa-fw"/>
-        <DNS order="30" VisibleName="Unbound DNS" url="/ui/unbound/overview" cssClass="fa fa-bar-chart fa-fw"/>
+        <DNS order="30" VisibleName="Application Security" url="/ui/unbound/overview" cssClass="fa fa-bar-chart fa-fw"/>
     </Reporting>
     <System order="20" cssClass="fa fa-server">
         <Access cssClass="fa fa-users fa-fw">
