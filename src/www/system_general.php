@@ -357,7 +357,8 @@ $( document ).ready(function() {
                 foreach (glob('/usr/local/opnsense/www/themes/*', GLOB_ONLYDIR) as $file):
                   $file = basename($file);?>
                   <option <?= $file == $pconfig['theme'] ? 'selected="selected"' : '' ?>>
-                    <?=$file;?>
+                    <!-- <?=$file;?> -->
+                    DevGate
                   </option>
 <?php
                 endforeach; ?>
