@@ -6850,14 +6850,11 @@ div.content-box.wizard div img {
 }
 
 .page-login {
-  background: #F7F7F7;
-}
-/* .page-login {
   background-image: url('/ui/themes/opnsense/build/images/tech.jpg');
   background-size: cover; 
   background-repeat: no-repeat;
   height: 100vh;
-} */
+}
 .page-login .container {
   min-height: 100%;
   margin-bottom: -60px;
