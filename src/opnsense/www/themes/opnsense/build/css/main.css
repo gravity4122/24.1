@@ -3401,8 +3401,10 @@ select[multiple].input-lg,
 
 .btn-primary {
   color: #fff;
-  background-color: #D94F00;
-  border-color: #D95100;
+  background-color:hsla(132, 70%, 23%, 1);
+  border-color: hsla(132, 70%, 23%, 1);
+  /* background-color: #D94F00; */
+  /* border-color: #D95100; */
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -4534,8 +4536,10 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: #3C3C3B;
-  border-color: #2b2b2b;
+  background-color:hsla(132, 70%, 23%, 1);
+  border-color: hsla(132, 70%, 23%, 1);
+  /* background-color: #3C3C3B; */
+  /* border-color: #2b2b2b; */
 }
 .navbar-default .navbar-brand {
   color: #F7F7F7;
@@ -5286,8 +5290,10 @@ a.list-group-item .list-group-item-heading {
 }
 a.list-group-item:hover, a.list-group-item:focus {
   text-decoration: none;
-  color: #D94F00;
-  background-color: #f5f5f5;
+  color: white;
+  background-color: hsla(132, 70%, 23%, 1);
+  /* color: #D94F00; */
+  /* background-color: #f5f5f5; */
 }
 a.list-group-item:hover:before, a.list-group-item:focus:before {
   background: #D94F00;
@@ -6423,7 +6429,8 @@ button.close {
 }
 
 .pull-right {
-  float: right !important;
+  /* float: right !important; */
+  width: 350px
 }
 
 .pull-left {
@@ -6846,6 +6853,12 @@ div.content-box.wizard div img {
 .page-login {
   background: #F7F7F7;
 }
+/* .page-login {
+  background-image: url('/ui/themes/opnsense/build/images/tech.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 100vh;
+} */
 .page-login .container {
   min-height: 100%;
   margin-bottom: -60px;
@@ -6865,7 +6878,8 @@ div.content-box.wizard div img {
   margin: 100px auto 15px auto;
 }
 .login-modal-head {
-  background: #3C3C3B;
+  /* background: #3C3C3B; */
+  background: hsla(132, 70%, 23%, 1);
   height: 75px;
   padding: 0 20px;
 }
@@ -7243,7 +7257,8 @@ hr {
   width: 3px;
 }
 .active-menu-title.active, .active-menu a.active {
-  background-color: #E8E8E8;
+  /* background-color: #E8E8E8; */
+  background-color: hsla(132, 70%, 23%, 1);
 }
 
 .active-menu a:before {
@@ -7406,4 +7421,15 @@ div[data-for*=help_for] {
 
 .modal-footer {
   padding: 15px;
+}
+
+.logout-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  color:white !important;
 }
