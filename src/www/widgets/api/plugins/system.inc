@@ -176,7 +176,7 @@ function system_api_versions($product)
 
 function system_api_firmware($product)
 {
-     
+    $ret = gettext('Click to view pending updates.');
 
     $current = explode('_', $product['product_version'])[0];
 
