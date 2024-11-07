@@ -327,7 +327,7 @@ function display_error_form($text)
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <title><?= gettext('Error') ?> | <?= $product->name() ?></title>
+    <title><?= gettext('Error') ?> | DevGate</title>
 
     <link href="<?= cache_safe(get_themed_filename('/css/main.css')) ?>" rel="stylesheet">
     <link href="<?= cache_safe(get_themed_filename('/images/favicon.png')) ?>" rel="shortcut icon">
@@ -368,7 +368,7 @@ function display_login_form($Login_Error)
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <title><?= gettext('Login') ?> | <?= $product->name() ?></title>
+    <title><?= gettext('Login') ?> | DevGate</title>
 
     <link href="<?= cache_safe(get_themed_filename('/css/main.css')) ?>" rel="stylesheet">
     <link href="<?= cache_safe(get_themed_filename('/images/favicon.png')) ?>" rel="shortcut icon">
@@ -424,12 +424,21 @@ function display_login_form($Login_Error)
 
       </main>
       <div class="login-foot text-center">
-        <a target="_blank" href="<?= $product->website() ?>"><?= $product->name() ?></a> (c) <?= $product->copyright_years() ?>
-        <a target="_blank" href="<?= $product->copyright_url() ?>"><?= $product->copyright_owner() ?></a>
+        <a target="_blank" href="https://www.devray.in/">DevGate</a> <span id="copyright"></span> Developed and Maintained by 
+        <a target="_blank" href="https://www.maplecloudtechnologies.com/">MapleCloud Technologies</a>
       </div>
-
+      
     </div>
 
     </body>
+    <script>
+        function updateCopyright() {
+        var currentYear = new Date().getFullYear();
+        var twoYearsBefore = currentYear - 2;
+        document.getElementById('copyright').innerText = '(c) ' + twoYearsBefore + ' - ' + currentYear;
+        }
+        updateCopyright();
+        setInterval(updateCopyright, 1000);
+    </script>
   </html>
 <?php }

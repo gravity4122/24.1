@@ -163,7 +163,7 @@ function system_api_versions($product)
 {
     $result = [];
 
-    $result[] = sprintf('%s %s-%s', $product['product_name'], $product['product_version'], $product['product_arch']);
+    $result[] = sprintf('%s %s-%s','DevGate','2.0', $product['product_arch']);
     $result[] = php_uname('s') . ' ' . php_uname('r');
     $result[] = shell_safe('/usr/local/bin/openssl version | cut -f -2 -d \' \'');
 
@@ -176,7 +176,7 @@ function system_api_versions($product)
 
 function system_api_firmware($product)
 {
-    $ret = gettext('Click to check for updates.');
+     
 
     $current = explode('_', $product['product_version'])[0];
 
